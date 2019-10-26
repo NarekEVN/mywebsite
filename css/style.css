@@ -585,6 +585,9 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
+  .certificate .title h1 {
+    font-size: 25px;
+  }
   .photo {
     display: none;
   }
