@@ -35,6 +35,7 @@ scrollcontrol(".tocert", "#certf");
 scrollcontrol(".toport", "#port");
 scrollcontrol(".tocontact", "#contact");
 scrollcontrol(".viewworks", "#port");
+scrollcontrol(".top", ".start");
 
 function scrollcontrol(btn, element){
   const link = document.querySelector(btn);
@@ -42,6 +43,28 @@ function scrollcontrol(btn, element){
     let elem = document.querySelector(element).offsetTop - header.offsetHeight;
     window.scrollTo(0, elem);
   })
+}
+
+scrollspy(".tohome", ".start");
+scrollspy(".toabout", "#about");
+scrollspy(".toserv", "#serv");
+scrollspy(".tocert", "#certf");
+scrollspy(".toport", "#port");
+scrollspy(".tocontact", "#contact");
+
+function scrollspy(link, element){
+  let slink = document.querySelector(link);
+  let elem = document.querySelector(element);
+  
+  window.addEventListener("scroll", function(){
+    if (window.pageYOffset >= elem.offsetTop && window.pageYOffset <= elem.offsetTop + elem.offsetHeight - header.offsetHeight){
+      slink.classList.add("active_link");
+    }
+    else{
+      slink.classList.remove("active_link");
+    }
+  })
+
 }
 
 const menubtn = document.querySelector(".menu_toggler");
@@ -63,4 +86,13 @@ document.addEventListener("click", function(e){
     menu.classList.remove("active");
   }
 })
+const totop = document.querySelector(".top");
+window.addEventListener("scroll", function(){
+  if (window.pageYOffset > 300){
+    totop.classList.add("activetop");
+  }
+  else{
+    totop.classList.remove("activetop");
+  }
+})  
 

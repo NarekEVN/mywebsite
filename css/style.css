@@ -43,21 +43,18 @@ header {
 .menu_bar .menu li .active_link {
   color: #754EF9;
   font-weight: 700;
-}
-
-.menu_bar .menu li a {
-  color: #8A8FA3;
-  font-weight: 500;
+  position: relative;
   -webkit-transition: .3s ease;
   transition: .3s ease;
-  position: relative;
 }
 
-.menu_bar .menu li a:before {
+.menu_bar .menu li .active_link:before {
   content: '';
   position: absolute;
   width: 3px;
-  height: 0;
+  height: 30px;
+  -webkit-animation: scrollspy .3s linear 1;
+          animation: scrollspy .3s linear 1;
   top: -40px;
   background: #754EF9;
   left: 0;
@@ -67,13 +64,16 @@ header {
   transition: .3s ease;
 }
 
+.menu_bar .menu li a {
+  color: #8A8FA3;
+  font-weight: 500;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
 .menu_bar .menu li a:hover {
   color: #754EF9;
   text-decoration: none;
-}
-
-.menu_bar .menu li a:hover:before {
-  height: 30px;
 }
 
 section, footer {
@@ -558,6 +558,24 @@ footer {
   }
 }
 
+@-webkit-keyframes scrollspy {
+  from {
+    height: 0;
+  }
+  to {
+    height: 30px;
+  }
+}
+
+@keyframes scrollspy {
+  from {
+    height: 0;
+  }
+  to {
+    height: 30px;
+  }
+}
+
 .menu.active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -576,6 +594,37 @@ footer {
 #close:hover {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: #fff;
+  background: #152136;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 30px;
+  border: 2px solid #586376;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.top:hover {
+  background: #754EF9;
+  border: 2px solid #754EF9;
+  color: #fff;
+}
+
+.activetop {
+  opacity: 1;
+  pointer-events: all;
 }
 
 @media screen and (min-width: 992px) {
