@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #112C54;
+	font-family: sans-serif;
+}
+header{
+	display: flex;
+	justify-content: space-around;
+	color: #fff;
+	text-align: center;
+	margin-top: 20px;
+}
+.intro{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	margin-top: 120px;
+	flex-direction: column;
+}
+.start-btn{
+	display: inline-block;
+	background: #61B54A;
+	color: #fff;
+	padding: 15px 30px;
+	border-radius: 2px;
+	text-decoration: none;
+	width: 200px;
+	margin: 30px auto;
+}
+.fadOut{
+	transform: translateY(-60px);
+	opacity: 0;
+	pointer-events: none;
+	transition: .3s ease;
+}
+.main{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	/*margin-top: 120px;*/
+	flex-direction: column;
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(-320px);
+}
+.options{
+	flex-direction: row;
+}
+.options button{
+	display: inline-block;
+	background: #61B54A;
+	color: #fff;
+	padding: 15px 30px;
+	border-radius: 2px;
+	text-decoration: none;
+	width: 200px;
+	margin: 30px auto;
+	cursor: pointer;
+	border: none;
+}
+.fadeIn{
+	transform: translateY(-120px);
+	opacity: 1;
+	pointer-events: all;
+	transition: .3s ease;
+}
+#result{
+	color: #fff;
+	text-align: center;
+}
+.win-modal,
+.lose-modal{
+	/*height: 500px;*/
+	text-align: center;
+	background: #D6D6D6;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+}
+.win-modal .modal-header{
+	background: #28a745;
+	margin: 30px 0;
+}
+.lose-modal .modal-header{
+	background: #dc3545;
+	margin: 30px 0;
+}
+.close-btn{
+	color: #000;
+	font-weight: bold;
+	font-size: 25px;
+}
+.options img{
+	width: 200px;
+	animation: wave 1s linear infinite;
+}
+.playerHand{
+	float: left;
+}
+.pcHand{
+	float: right;
+}
+#reload{
+	display: inline-block;
+	background: #971B2F;
+	color: #fff;
+	padding: 15px 30px;
+	border-radius: 2px;
+	text-decoration: none;
+	width: 200px;
+	margin: 30px auto;
+	cursor: pointer;
+	border: none;
+	display: flex;
+	justify-content: center;
+}
+footer{
+	transform: translateY(-120px);
+	opacity: 0;
+	pointer-events: none;
+}
+@keyframes wave{
+	0%{
+		transform: translateY(20px);
+	}
+	25%{
+		transform: translateY(10px);
+	}
+	50%{
+		transform: translateY(0px);
+	}
+	75%{
+		transform: translateY(-10px);
+	}
+	100%{
+		transform: translateY(20px);
+	}
+}

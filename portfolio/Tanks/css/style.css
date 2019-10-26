@@ -1,0 +1,219 @@
+*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			height: 100vh;
+			background-image: url(../img/bg.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.dasht{
+			width: 100%;
+			height: 100vh;
+			background-image: url(../img/field.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+			display: none;
+		}
+		.mytank{
+			width: 100px;
+			height: 100px;
+			background-image: url(../img/tank1.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+		.start{
+			position: absolute;
+			border: 2px solid #27ae60;
+			background: #2ecc71;
+			width: 200px;
+			height: 50px;
+			font-size: 25px;
+			border-radius: 5px;
+			color: #fff;
+			cursor: pointer;
+			top: 40%;
+			right: 0;
+			left: 0;
+			margin: auto;			
+		}
+		.start:active{
+			background: #6ab04c;
+		}
+		.krak{
+			width: 40px;
+			height: 70px;
+			background-image: url(../img/bullet2.gif);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			position: absolute;
+			bottom: 105px;
+		}
+		.tank{
+			width: 100px;
+			height: 100px;
+			background-image: url(../img/tank2.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			top: 0;
+			transform: rotate(180deg);
+		}
+		.game-over{
+			position: absolute;
+			width: 100%;
+			height: 100vh;
+			background: rgba(0,0,0,0.7);
+			z-index: 1;
+			display: none;
+			text-align: center;
+		}
+		.game-over h1{
+			font-family: Intro, sans-serif;
+			color: #e74c3c;
+			font-size: 50px;
+			animation: resize 1s infinite linear;
+		}
+		.boom{
+			width: 50px;
+			height: 70px;
+			background-image: url(../img/boom.gif);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+		.point{
+			position: absolute;
+			right: 50px;
+			font-size: 50px;
+			font-family: sans-serif;
+			color: #fff;
+			z-index: 1;
+		}
+		.info-btn{
+			position: absolute;
+			right: 50px;
+			top: 10px;
+			padding: 4px 13px 8px 13px;
+			background: #3498db;
+			color: #fff;
+			border: none;
+			cursor: pointer;
+			font-size: 35px;
+		}
+		.info{
+			position: absolute;
+			width: 500px;
+			background: #fff;
+			border-radius: 10px;
+			min-height: 200px;
+			text-align: center;
+			font-family: sans-serif;
+			right: 0;
+			left: 0;
+			top: 30%;
+			margin: auto;
+			box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.75);
+			display: none;
+		}
+		.info-header{
+			padding-top: 25px;
+			border-bottom: 1px solid #D8D9DA;
+		}
+		.info-footer{
+			border-top: 1px solid #D8D9DA;
+			padding-top: 25px;
+			height: 50px;
+		}
+		.info-body{
+			padding: 15px 0;
+		}
+		.close-info{
+			border: none;
+			background: none;
+			color: #7f8c8d;
+			cursor: pointer;
+			font-size: 25px;
+			position: absolute;
+			right: 10px;
+		}
+		.close-info:hover{
+			color: #353b48;
+		}
+		.restart{
+			position: absolute;
+			bottom: 0;
+			right: 20px;
+			background: #f39c12;
+			border: 1px solid #e67e22;
+			color: white;
+			font-size: 30px;
+			padding: 8px 13px;
+			cursor: pointer;
+			z-index: 1;
+		}
+		.ok-btn{
+			border: none;
+			background: #3498db;
+			font-size: 15px;
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.reload{
+			position: absolute;
+			top: 35%;
+			right: 0;
+			left: 0;
+			margin: auto;
+			background: #f39c12;
+			border: 1px solid #e67e22;
+			color: white;
+			font-size: 30px;
+			width: 300px;
+			height: 50px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.current-score{
+			position: absolute;
+			top: 20%;
+			right: 0;
+			left: 0;
+			margin: auto;
+			font-size: 30px;
+			color: #fff;
+			font-family: sans-serif;
+		}
+		.citate{
+			position: absolute;
+			top: 55%;
+			right: 0;
+			left: 0;
+			margin: auto;
+			font-size: 30px;
+			color: #fff;
+			font-family: sans-serif;
+		}
+		@keyframes resize{
+			0%{
+				font-size: 50px;
+			}
+			50%{
+				font-size: 75px;
+			}
+			100%{
+				font-size: 50px;
+			}
+		}

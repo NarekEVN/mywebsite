@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rock, paper and scissors</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- <div class="win-modal">
+		<div class="close-btn">x</div>
+		<div class="modal-header">
+			<h1>Congrats! You Win!</h1>
+		</div>
+	</div> -->
+	<!-- <div class="lose-modal">
+		<div class="close-btn">x</div>
+		<hr>
+		<div class="modal-header">
+			<h1>You Lose! Game Over!</h1>
+		</div>
+	</div> -->
+	<header>
+		<div class="player-score">
+			<h2>Player Score</h2>
+			<p id="playerScore">0</p>
+		</div>
+		<div class="pc-score">
+			<h2>Computer Score</h2>
+			<p id="pcScore">0</p>
+		</div>
+	</header>
+	<section class="intro">
+		<h1>Okay, Let's start the game =)</h1>
+		<a href="#" class="start-btn">Start</a>
+	</section>
+	<section class="main">
+		<h1>Choose an option</h1>
+		<div class="options">
+			<img src="rock.png" class="playerHand hand">
+			<img src="rock.png" class="pcHand hand">
+			<button value="rock">Rock</button>
+			<button value="paper">Paper</button>
+			<button value="scissors">Scissors</button>
+		</div>
+	</section>
+	<footer>
+		<h1 id="result"></h1>
+		<button id="reload">Restart the game</button>
+	</footer>
+</body>
+	<script src="js/script.js"></script>
+</html>

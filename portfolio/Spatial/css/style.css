@@ -1,0 +1,491 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.menu_toggler {
+  border: none;
+  background: #76797E;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  display: none;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/overlay.png), url(../images/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+header nav a {
+  text-decoration: none;
+}
+
+header nav .logo a {
+  font-weight: bold;
+}
+
+header nav .logo span {
+  font-size: 18px;
+}
+
+header nav .logo, header nav .logo a {
+  color: #fff;
+}
+
+header nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+header nav li a {
+  color: #DDDDDD;
+  font-size: 18px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+header nav li a:hover {
+  color: #fff;
+}
+
+header .bg_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+header .bg_content h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+header .bg_content p {
+  margin: 40px 0;
+  color: #AAAAAA;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.btn {
+  text-transform: uppercase;
+  padding: 20px 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.pink_btn {
+  background: #F32853;
+}
+
+.pink_btn:hover {
+  background: #f5486d;
+}
+
+.dark_btn {
+  background: #323037;
+}
+
+.dark_btn:hover {
+  background: #4d4c4e;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  padding: 50px 0;
+}
+
+section.grey {
+  background: #F6F6F6;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .title, .about .info {
+  width: 50%;
+  padding: 0 6em;
+}
+
+.about .title h2 {
+  font-size: 40px;
+  color: #484848;
+  line-height: 1.5em;
+}
+
+.about .title p {
+  line-height: 1.5em;
+  color: #AAAAAA;
+  font-size: 20px;
+}
+
+.about .info {
+  font-size: 15px;
+  color: #484848;
+}
+
+.about .info p {
+  line-height: 1.5em;
+}
+
+.about .info p:first-child {
+  margin-bottom: 40px;
+}
+
+.gallery_title {
+  text-align: center;
+}
+
+.gallery_title h1 {
+  font-size: 45px;
+  color: #484848;
+}
+
+.gallery_title p {
+  margin: 30px 0;
+  color: #AAAAAA;
+  font-size: 25px;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery .gallery_item {
+  -webkit-box-shadow: -1px 3px 9px -4px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px 3px 9px -4px rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+
+.gallery .gallery_item:first-child {
+  margin-right: 15px;
+}
+
+.gallery .gallery_item:last-child {
+  margin-left: 15px;
+}
+
+.gallery .gallery_item img {
+  width: 100%;
+}
+
+.gallery .gallery_item h3 {
+  margin: 30px 0;
+  color: #484848;
+  font-size: 20px;
+}
+
+.gallery_links {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.gallery_links a {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.geo_title h1 {
+  font-size: 45px;
+  color: #484848;
+}
+
+.geo_title p {
+  margin: 30px 0;
+  color: #AAAAAA;
+  font-size: 25px;
+}
+
+.geo {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.geo .geo_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.geo .geo_item img {
+  border-radius: 50%;
+  border: 10px solid #DDDDDD;
+}
+
+.geo .geo_item .geo_info h3 {
+  color: #323037;
+}
+
+.geo .geo_item .geo_info .muted {
+  color: #AAAAAA;
+}
+
+.geo .geo_item .geo_info p {
+  margin-top: 20px;
+}
+
+.geo .to_right {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.geo .to_right .geo_info {
+  margin-right: 20px;
+}
+
+.geo .to_left {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.geo .to_left .geo_info {
+  margin-left: 20px;
+}
+
+.touch {
+  background-image: url(../images/overlay.png), url(../images/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 60%;
+  position: relative;
+  text-align: center;
+  padding: 80px;
+}
+
+.touch h1 {
+  font-size: 45px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.touch p {
+  color: #AAAAAA;
+  font-size: 25px;
+  margin: 25px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 80px;
+}
+
+footer .social a {
+  font-size: 45px;
+  margin: 0 25px;
+  color: #AAAAAA;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+footer .social a:hover {
+  color: #484848;
+}
+
+footer span.center {
+  border-right: 1px solid #AAAAAA;
+  border-left: 1px solid #AAAAAA;
+  padding: 0 20px;
+}
+
+footer .copyright {
+  margin-top: 35px;
+}
+
+footer .copyright span {
+  color: #AAAAAA;
+  margin: 0 20px;
+  font-size: 15px;
+}
+
+footer .copyright span a {
+  color: #AAAAAA;
+  text-decoration: none;
+}
+
+.fa.close_menu {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: auto;
+  }
+  .copyright span {
+    display: block;
+  }
+  .copyright span.center {
+    border: none;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .copyright span {
+    display: block;
+  }
+  .copyright span.center {
+    border: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .copyright span {
+    display: block;
+  }
+  .copyright span.center {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .geo, .gallery, .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery .gallery_item, .title, .info {
+    margin: 0 !important;
+  }
+  .about .title, .about .info {
+    width: auto;
+  }
+  .geo .geo_item {
+    width: auto;
+  }
+  .gallery .gallery_item, .geo .geo_item {
+    margin-top: 30px !important;
+  }
+  .fa.close_menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+  }
+  .fa.close_menu:hover {
+    color: #AAAAAA;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .menu_toggler {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
+  .menu.active {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  .menu {
+    -webkit-transform: translateX(-600px);
+            transform: translateX(-600px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #202020;
+    height: 100vh;
+    width: 50%;
+    z-index: 2;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+  }
+  .menu li {
+    display: block;
+    margin: 40px 20px;
+    border-bottom: 1px solid #DDDDDD;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
