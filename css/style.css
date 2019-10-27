@@ -650,11 +650,24 @@ footer {
     height: 500px;
     padding-top: 100px;
   }
+  .start .yellow {
+    left: 60%;
+  }
+  .start .blue {
+    top: 50%;
+  }
+  .start .red {
+    top: 10%;
+  }
+  .start .purp {
+    bottom: 0;
+    left: 60%;
+  }
   .menu {
     position: fixed;
     left: 0;
     top: 0;
-    width: 40%;
+    width: 300px;
     height: 100vh;
     background: #fff;
     display: -webkit-box;
@@ -683,6 +696,12 @@ footer {
   }
   .menu li a:before {
     display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .start .shape img {
+    width: 70px;
   }
 }
 /*# sourceMappingURL=style.css.map */

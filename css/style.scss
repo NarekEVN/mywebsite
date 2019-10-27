@@ -508,6 +508,7 @@ footer{
   }
 }
 @media screen and (max-width: 992px){
+  
   .certificate .title{
     h1{
       font-size: 25px;
@@ -525,12 +526,26 @@ footer{
   .start{
     height: 500px;
     padding-top: 100px;
+    .yellow{
+      left: 60%;
+    }
+    .blue{
+      top: 50%;
+    }
+    .red{
+      top: 10%;
+    }
+    .purp{
+    bottom: 0;
+    left: 60%;
+  }
+  
   }
   .menu{
     position: fixed;
     left: 0;
     top: 0;
-    width: 40%;
+    width: 300px;
     height: 100vh;
     background: #fff;
     display: flex;
@@ -549,6 +564,13 @@ footer{
           display: none;
         }
       }
+    }
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 768px){
+  .start .shape{
+    img{
+      width: 70px;
     }
   }
 }

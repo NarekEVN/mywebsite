@@ -57,7 +57,7 @@ function scrollspy(link, element){
   let elem = document.querySelector(element);
   
   window.addEventListener("scroll", function(){
-    if (window.pageYOffset >= elem.offsetTop && window.pageYOffset <= elem.offsetTop + elem.offsetHeight - header.offsetHeight){
+    if (window.pageYOffset >= elem.offsetTop - 100 && window.pageYOffset <= elem.offsetTop + elem.offsetHeight){
       slink.classList.add("active_link");
     }
     else{
