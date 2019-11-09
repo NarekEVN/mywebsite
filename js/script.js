@@ -97,3 +97,35 @@ window.addEventListener("scroll", function(){
   }
 })  
 
+let darkSwitcher = document.querySelector(".dark_mode");
+darkSwitcher.addEventListener('click', function(){
+    if (localStorage.getItem('mode') == "dark"){
+      localStorage.setItem('mode', 'light');
+      document.querySelector('body').classList.remove('dark');
+      darkSwitcher.querySelector("i").classList.remove('fa-moon-o');
+      darkSwitcher.querySelector("i").classList.add("fa-sun-o");
+    }
+    else{
+      localStorage.setItem('mode', 'dark');
+      document.querySelector('body').classList.add('dark')
+      darkSwitcher.querySelector("i").classList.remove('fa-sun-o');
+      darkSwitcher.querySelector("i").classList.add("fa-moon-o");
+    }
+})
+
+
+
+window.onload = function(){
+    let switcherIcon = darkSwitcher.querySelector("i");
+    if (localStorage.getItem('mode') == "light"){
+      document.querySelector('body').classList.remove('dark')
+      switcherIcon.classList.remove("fa-moon-o");
+      switcherIcon.classList.add("fa-sun-o");
+    }
+    else{
+      document.querySelector('body').classList.add('dark')
+      switcherIcon.classList.remove("fa-sun-o");
+      switcherIcon.classList.add("fa-moon-o");
+    }
+  
+}
