@@ -5,6 +5,19 @@ $dirtblue: #8A8FA3;
   font-family: 'Comfortaa', cursive;
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #dcdde1;
+}
+::-webkit-scrollbar-thumb {
+  background: #353b48;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 header{
   background: #fff;
   box-shadow: 1px 20px 15px -27px rgba(0, 0, 0, 0.75);
@@ -25,6 +38,7 @@ header{
   .menu{
     list-style: none;
     margin-block-end: 0;
+    overflow-y: auto;
     li{
       display: inline-block;
       margin: 0 20px;
