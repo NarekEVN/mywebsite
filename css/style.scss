@@ -8,7 +8,7 @@ $dirtblue: #8A8FA3;
 header{
   background: #fff;
   box-shadow: 1px 20px 15px -27px rgba(0, 0, 0, 0.75);
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .menu_bar{
   display: flex;
@@ -24,6 +24,7 @@ header{
   }
   .menu{
     list-style: none;
+    margin-block-end: 0;
     li{
       display: inline-block;
       margin: 0 20px;
@@ -59,7 +60,7 @@ header{
   }
 }
 section,footer{
-  margin-top: 96px;
+  margin-top: 77px;
 }
 .start{
   width: 100%;
@@ -69,23 +70,26 @@ section,footer{
   background: #EEEEEE;
   .red{
     top: 20%;
+    width: 180px;
   }
   .blue{
     right: 10%;
     top: 30%;
+    width: 200px;
   }
   .yellow{
     top: 20%;
     left: 40%;
+    width: 100px;
+    height: 100px;
   }
   .purp{
-    bottom: 0;
+    bottom: 10%;
     left: 30%;
+    width: 130px;
   }
   .shape{
     position: absolute;
-    width: 100px;
-    height: 100px;
     transition: .2s ease-out;
     img{
       width: 100%;
@@ -427,6 +431,7 @@ footer{
   background: #1c2940;
   color: #fff;
   padding: 15px 0 5px 0;
+  height: 70px;
 }
 
 @keyframes nine{

@@ -58,8 +58,12 @@ function scrollspy(link, element){
   let elem = document.querySelector(element);
   
   window.addEventListener("scroll", function(){
-    if (window.pageYOffset >= elem.offsetTop - 100 && window.pageYOffset <= elem.offsetTop + elem.offsetHeight){
-      slink.classList.add("active_link");
+    if (window.pageYOffset >= elem.offsetTop - 80 && window.pageYOffset <= elem.offsetTop + elem.offsetHeight){
+      let x = document.querySelector(".active_link");
+      if (x){
+        x.classList.remove("active_link")
+      }
+    slink.classList.add('active_link');
     }
     else{
       slink.classList.remove("active_link");
@@ -117,7 +121,7 @@ darkSwitcher.addEventListener('click', function(){
 
 window.onload = function(){
     let switcherIcon = darkSwitcher.querySelector("i");
-    if (localStorage.getItem('mode') == "light"){
+    if (localStorage.getItem('mode') == "light" || !localStorage.getItem("mode")){
       document.querySelector('body').classList.remove('dark')
       switcherIcon.classList.remove("fa-moon-o");
       switcherIcon.classList.add("fa-sun-o");
