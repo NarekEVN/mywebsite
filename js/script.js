@@ -99,6 +99,14 @@ window.addEventListener("scroll", function(){
   else{
     totop.classList.remove("activetop");
   }
+
+  if (window.pageYOffset >= document.querySelector('.my_progress').offsetTop + document.querySelector("#about").offsetTop - 150){
+    const progress = document.querySelectorAll('.progress_bar');
+
+    progress.forEach(function(item){
+      item.classList.add('animated');
+    })
+  }
 })  
 
 let darkSwitcher = document.querySelector(".dark_mode");

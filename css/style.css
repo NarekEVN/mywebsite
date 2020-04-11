@@ -291,36 +291,42 @@ section, footer {
   content: '';
   position: absolute;
   top: 0;
-  width: 90%;
-  -webkit-animation: nine 1.5s linear 1;
-          animation: nine 1.5s linear 1;
   height: 5px;
   background: #754EF9;
   border-radius: 5px;
+}
+
+.my_progress .progress_item:nth-child(1) .animated:after, .my_progress .progress_item:nth-child(2) .animated:after {
+  -webkit-animation: nine 1.5s linear 1 forwards;
+          animation: nine 1.5s linear 1 forwards;
 }
 
 .my_progress .progress_item:nth-child(3) .progress_bar:after {
   content: '';
   position: absolute;
   top: 0;
-  width: 75%;
-  -webkit-animation: sevenfive 1.5s linear 1;
-          animation: sevenfive 1.5s linear 1;
   height: 5px;
   background: #754EF9;
   border-radius: 5px;
+}
+
+.my_progress .progress_item:nth-child(3) .animated:after {
+  -webkit-animation: sevenfive 1.5s linear 1 forwards;
+          animation: sevenfive 1.5s linear 1 forwards;
 }
 
 .my_progress .progress_item:nth-child(4) .progress_bar:after, .my_progress .progress_item:nth-child(5) .progress_bar:after, .my_progress .progress_item:nth-child(6) .progress_bar:after {
   content: '';
   position: absolute;
   top: 0;
-  width: 70%;
-  -webkit-animation: seven 1.5s linear 1;
-          animation: seven 1.5s linear 1;
   height: 5px;
   background: #754EF9;
   border-radius: 5px;
+}
+
+.my_progress .progress_item:nth-child(4) .animated:after, .my_progress .progress_item:nth-child(5) .animated:after, .my_progress .progress_item:nth-child(6) .animated:after {
+  -webkit-animation: seven 1.5s linear 1 forwards;
+          animation: seven 1.5s linear 1 forwards;
 }
 
 .short_info {
